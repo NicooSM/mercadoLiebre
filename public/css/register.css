@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header{
+    padding: 5%;
+}
+
+.logo{
+    width: 45%;
+}
+
+.form{
+    display: flex;
+}
+
+.search-box{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.busqueda{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 40vw;
+}
+
+.barra{
+    margin: auto;
+    background-color: var(--col--light--gray);
+    border: none;
+    outline: none;
+}
+
+.fa-search{
+    margin: auto;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.main-nav ul{
+    list-style: none;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.left-nav, .right-nav{
+    display: none;
+    margin: 10px 0px 10px 0px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 32px;
+    margin: 10px 0px 20px 0px;
+    padding: 6px;
+    width: 40px;
+}
+/*----REGISTER CSS----*/
+main{
+    padding: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+h2{
+    color: #0053ac;
+}
+
+.formulario-elemento{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.formulario-elemento input{
+    border-radius: 10px;
+    border: none;
+    padding: 8px 0px 8px 0px;
+}
+
+.formulario-elemento-multiple{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    gap: 12px;
+}
+
+.formulario-elemento-multiple button{
+    padding: 10px 40px 10px 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: #0053ac;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+/*----Final Register CSS----*/
+.pie-de-pagina{
+    margin: 0px auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0053ac;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+
+footer article p{
+    text-align: center;
+}
+
+@media(min-width:361px){
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.products article{
+        width: 45%;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+}
+
+@media(min-width:769px){
+    .description{
+        display: block;
+    }
+    .left-nav, .right-nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main section div.products article{
+        width: 22%;
+    }
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 50%;
+    }
+    .subtitle{
+        max-width: 350px;
+        text-align: right;
+    }
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-nav ul{
+        display: flex;
+    }
+    .main-nav li{
+        margin: 0 6px;
+    }
+    .busqueda{
+        width: 25vw;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .pie-de-pagina{
+        width: 30%;
+        text-align: center;
+    }
+}
+
+@media (min-width:1200px){
+    .top-header, .main-nav{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-nav li{
+        margin: 0 10px;
+    }
+    .main-nav a{
+        font-size: 19px;
+    }
+    .subtitle{
+        max-width: none;
+    }
+    .busqueda{
+        width: 20vw;
+    }
+}
