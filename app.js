@@ -17,7 +17,7 @@ app.get("/login", function (req, res){
   });
 
 
-
+app.use(express.static(__dirname));
 
 app.listen(process.env.PORT || 5500, ()=>
     console.log("servidor funcionando 5500")
